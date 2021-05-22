@@ -104,3 +104,7 @@ You also can specify in the files above what test goups/classes you want to run 
     build/test-results
     ```
 2. Serve up the Allure report in a browser: `gradlew allureServe` It will open the browser with the UI test report.
+
+Allure report:
+![image](https://user-images.githubusercontent.com/61929090/119243541-07d2f680-bbab-11eb-95c3-2c643bcdff0d.png)
+

@@ -2,15 +2,15 @@
 
 # Get Started
 
-This is a beginners guide to having the app up and running on your computer or device.
+This is a beginners guide to having the framework installed and running successfully on your computer.
 
-This document is intended for anyone in the team interested in running the project, no matter background.
+This document is intended for anyone interested in running the project, no matter background.
 
-It goes into deep detail on everything that you need to setup. If you find anything missing, edits on this document are more than welcome.
+It goes into deep detail on everything that you need to setup.
 
 ## Before You Start
 
-This mini tutorial assumes that:
+This instruction assumes that:
 
 - You know how to use the terminal (command line) on your operating system
 - You are familiar with GitHub
@@ -22,7 +22,7 @@ This mini tutorial assumes that:
 ##### To run auto-tests from this project the following is required
 1. Java 10/11 has been installed in the machine you would like to run tests.
 2. JAVA_HOME is set on your machine. (Instruction for this: 'https://docs.oracle.com/cd/E19509-01/820-3208/inst_cli_jdk_javahome_t/')
-3. At least one of the following browsers are installed: Chrome, Firefox. Ideally to have installed all both. This would allow to run test in three different browsers.
+3. At least one of the following browsers are installed: Chrome, Firefox. Ideally to have installed all both. This would allow to run test in different browsers.
 
 #### To clone this repository using Intellij
 1. Before you import, you need to make sure that in Intellij’s project defaults you have JDK 10/11 setup as an SDK properly.
@@ -60,7 +60,7 @@ _Example:_ `screenshotsPath=C:/Users/yury/AutoScreenshots/`
 1. Right click on one of the folowing files in folder `com/testing/webautomation/base/`
     * `chromeBrowserTest.xml` if you wish to run tests only with chrome browser
     * `firefoxBrowserTest.xml` if you wish to run tests only with firefox browser
-    * `corssBrowserTest.xml` if you wish to run tests with all three browsers
+    * `corssBrowserTest.xml` if you wish to run tests with both browsers
 2. Select `Run '.../...BrowserTest.xml'`
 
 You also can specify in the files above what test goups/classes you want to run you you dont wan to run all test suite.
@@ -84,18 +84,17 @@ You also can specify in the files above what test goups/classes you want to run 
 
     * `./gradlew test -PchromeBrowserSuite` to run tests with Chrome browser
     * `./gradlew test -PfirefoxBrowserSuite` to run tests with Firefox browser
-    * `./gradlew test -PcrossBrowserSuite`     to run tests with all three browsers
+    * `./gradlew test -PcrossBrowserSuite`     to run tests with both browsers
     
     It is highly recommended to run with `--info` to have all passing test steps and another useful information in your console!
  
- *NOTE* For Windows console gradlew command runs without `./`
     
     _Example:_ **`gradlew test -PchromeBrowserSuite --info`**
     
     *NOTE* The first time you run the test suite from the console, it may take some time, because it will download and compile all the necessary components.
 
 ## Process to create Allure report
-#####The best way to see a test report is to run "Allure Report"
+##### The best way to see a test report is to run "Allure Report"
 
 1. Run Allure report creation: `gradlew allureReport`
     This will create test report information in the following directories:

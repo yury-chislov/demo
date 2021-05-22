@@ -89,7 +89,7 @@ This test uses list of different variation of whitespaces `com.testing.webautoma
 - refresh browser 
 - check there is no tasks, no task counter and no clear completed button displayed (This expectation is debatable though)
 
-##  Attempt to rename a task, but don't save the new name and check results
+##  Attempt to rename a task but don't save the new name and check results
 
 ##### Steps:
 - Create new task

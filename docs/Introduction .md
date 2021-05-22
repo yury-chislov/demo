@@ -7,7 +7,7 @@
 
 ### Drive tests with Selenium webDriver
 
-In order to run tests on against website in this project I use Selenium webDriver. You can find out more information about Selenium on their official website: https://www.selenium.dev/
+In order to run tests against website in this project I use Selenium webDriver. You can find out more information about Selenium on their official website: https://www.selenium.dev/
 
 
 ### Organize Code with the Page Object Model
@@ -15,7 +15,7 @@ In order to make tests more readable and maintainable, in this project I applied
 The project has three main folders:
 * **base** - this folder contains all the main settings for the tests:
     * **TodomvcSite** file contains test data that we are going to use in the tests, and defines the pages on which our test will be run.
-    * Xml files in this folder are config files where I specify the exact test we want to run, and the browsers in which it will run. 
+    * **Xml** files in this folder are config files where I specify the exact test we want to run, and the browsers in which it will run. 
     
     * **TestBase** file is the file which is responsible to all setUps and tearDowns. It also contains methods that will be used in multiple tests regardless on what web pages they are executing.
     
@@ -38,7 +38,7 @@ Also I created the method which allows to easily make the screenshots when requi
      
 
 ### Test cases
-Since I was limited in time when I was implementing this project, and I did not have enough documentation with the requirements, I used Exploratory testing and a heuristic approach. I selected some of the most important functions in my opinion that are vital for this website, and created my own test for them:
+Since I was limited in time when I was implementing this project, and I did not have enough documentation with the requirements, I used Exploratory testing and a heuristic approach. I selected some of the most important functions in my opinion that are vital for this website, and created my own tests for them:
 * To create new tasks
 * To rename existing task
 * To complete tasks

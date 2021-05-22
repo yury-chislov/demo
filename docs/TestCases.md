@@ -7,7 +7,7 @@
 - [Attempt to click 'clear completed' when nothing completed](#attempt-to-click-clear-completed-when-nothing-completed)
 - [Attempt to create Empty Task and check results](#attempt-to-create-Empty-Task-and-check-results)
 - [Attempt to create task with disabled cookies](#attempt-to-create-task-with-disabled-cookies)
-- [Attempt to rename a task but don't save the new name and check results](#attempt-to-rename-a-task-but-don't-save-the-new-name-and-check-results)
+- [Attempt to rename a task but don't save the new name and check results](#attempt-to-rename-a-task-but-dont-save-the-new-name-and-check-results)
 
 
 ## Create tasks and check results

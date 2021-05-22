@@ -1,6 +1,6 @@
 # demo project
 
-#####This project was created to demonstrate the capabilities of the Selenium / TestNG framework. 
+##### This project was created to demonstrate the capabilities of the Selenium / TestNG framework. 
 
 All documentation is located in the docs folder.
 

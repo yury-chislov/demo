@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="none">
+    <parameter name="site" value="https://todomvc.com/examples/angular2/"/>
+    <test name="FirefoxTest" enabled="true">
+        <parameter name="browser" value="firefox"/>
+        <groups>
+            <define name="all">
+                <include name="mainPage"/>
+                <include name="myTests"/>
+            </define>
+            <run>
+                <include name="all"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.testing.webautomation.tests.negative.ClickClearWhenNothingComplited"/>
+            <class name="com.testing.webautomation.tests.negative.CreateEmptyTask"/>
+            <class name="com.testing.webautomation.tests.negative.CreateTasksNoCookies">
+                <parameter name="cookies" value="disabled"/>
+            </class>
+            <class name="com.testing.webautomation.tests.negative.RenameTaskAndDontSave"/>
+            <class name="com.testing.webautomation.tests.positive.ClearCompletedTasks"/>
+            <class name="com.testing.webautomation.tests.positive.CompleteTasks"/>
+            <class name="com.testing.webautomation.tests.positive.CreateTasks"/>
+            <class name="com.testing.webautomation.tests.positive.DeleteTask"/>
+            <class name="com.testing.webautomation.tests.positive.RenameTask"/>
+        </classes>
+    </test>
+</suite>
+
+
+
+
+
